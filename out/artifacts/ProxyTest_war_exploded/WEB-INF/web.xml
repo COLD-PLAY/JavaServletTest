@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!--Servlet-->
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/TomcatTest/Servlet</url-pattern>
+    </servlet-mapping>
+
+    <!--CheckBoxServlet-->
+    <servlet>
+        <servlet-name>CheckBoxServlet</servlet-name>
+        <servlet-class>CheckBoxServlet</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>CheckBoxServlet</servlet-name>
+        <url-pattern>/TomcatTest/CheckBoxServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--ReadParamsServlet-->
+    <servlet>
+        <servlet-name>ReadParamsServlet</servlet-name>
+        <servlet-class>ReadParamsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadParamsServlet</servlet-name>
+        <url-pattern>/TomcatTest/ReadParamsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--HttpHeaderServlet-->
+    <servlet>
+        <servlet-name>HttpHeaderServlet</servlet-name>
+        <servlet-class>HttpHeaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HttpHeaderServlet</servlet-name>
+        <url-pattern>/TomcatTest/HttpHeaderServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--RefreshServlet-->
+    <servlet>
+        <servlet-name>RefreshServlet</servlet-name>
+        <servlet-class>RefreshServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RefreshServlet</servlet-name>
+        <url-pattern>/TomcatTest/RefreshServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--ShowErrorServlet-->
+    <servlet>
+        <servlet-name>ShowErrorServlet</servlet-name>
+        <servlet-class>ShowErrorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowErrorServlet</servlet-name>
+        <url-pattern>/TomcatTest/ShowErrorServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--ErrorHandlerServlet-->
+    <servlet>
+        <servlet-name>ErrorHandlerServlet</servlet-name>
+        <servlet-class>ErrorHandlerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandlerServlet</servlet-name>
+        <url-pattern>/ErrorHandlerServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--ReadCookieServlet-->
+    <servlet>
+        <servlet-name>ReadCookieServlet</servlet-name>
+        <servlet-class>ReadCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadCookieServlet</servlet-name>
+        <url-pattern>/TomcatTest/ReadCookieServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--DeleteCookieServlet-->
+    <servlet>
+        <servlet-name>DeleteCookieServlet</servlet-name>
+        <servlet-class>DeleteCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookieServlet</servlet-name>
+        <url-pattern>/TomcatTest/DeleteCookieServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--SessionTrackServlet-->
+    <servlet>
+        <servlet-name>SessionTrackServlet</servlet-name>
+        <servlet-class>SessionTrackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionTrackServlet</servlet-name>
+        <url-pattern>/TomcatTest/SessionTrackServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--DatabaseAccessServlet-->
+    <servlet>
+        <servlet-name>DatabaseAccessServlet</servlet-name>
+        <servlet-class>DatabaseAccessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DatabaseAccessServlet</servlet-name>
+        <url-pattern>/TomcatTest/DatabaseAccessServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--UploadServlet-->
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/TomcatTest/UploadServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--CurrentDateServlet-->
+    <servlet>
+        <servlet-name>CurrentDateServlet</servlet-name>
+        <servlet-class>CurrentDateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CurrentDateServlet</servlet-name>
+        <url-pattern>/TomcatTest/CurrentDateServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--PageRedirectServlet-->
+    <servlet>
+        <servlet-name>PageRedirectServlet</servlet-name>
+        <servlet-class>PageRedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageRedirectServlet</servlet-name>
+        <url-pattern>/TomcatTest/PageRedirectServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--PageHitCountServlet-->
+    <servlet>
+        <servlet-name>PageHitCountServlet</servlet-name>
+        <servlet-class>PageHitCounterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageHitCountServlet</servlet-name>
+        <url-pattern>/TomcatTest/PageHitCountServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--SendEmailServlet-->
+    <servlet>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <servlet-class>SendEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <url-pattern>/TocmatTest/SendEmailServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--error-code 相关的错误页面-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorHandlerServlet</location>
+    </error-page>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/ErrorHandlerServlet</location>
+    </error-page>
+    <!--exception-type 相关的错误页面-->
+    <error-page>
+        <exception-type>
+            javax.servlet.ServletException
+        </exception-type>
+        <location>/ErrorHandlerServlet</location>
+    </error-page>
+    <error-page>
+        <exception-type>
+            java.io.IOException
+        </exception-type>
+        <location>/ErrorHandlerServlet</location>
+    </error-page>
+    <error-page>
+        <exception-type>
+            java.lang.Throwable
+        </exception-type>
+        <location>/ErrorHandlerServlet</location>
+    </error-page>
+
+    <!--LoginFilter-->
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>LoginFilter</filter-class>
+        <init-param>
+            <param-name>Site</param-name>
+            <param-value>菜鸟教程</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--SiteHitCounter-->
+    <filter>
+        <filter-name>SiteHitCount</filter-name>
+        <filter-class>SiteHitCounter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SiteHitCount</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--the setting of session-->
+    <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>
+</web-app>

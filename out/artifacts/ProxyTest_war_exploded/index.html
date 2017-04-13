@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>proxy test</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<form onsubmit="return MyCheck(this)" action="/TomcatTest/Servlet" method="POST">
+    网址名: <input type="text" name="name">
+    <br>
+    网址: <input type="text" name="url">
+    <br>
+    <input type="submit" name="submit" />
+</form>
+<script type="text/javascript">
+    function MyCheck(f) {
+        var str = f.name.value + f.url.value;
+        var c = new Array('script', '<', '>', 'input', 'img');
+        for (var i = 0; i < c.length; i++) {
+            if (str.indexOf(c[i]) != -1) {
+                alert('your input exists sensitive word: ' + c[i]);
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>
