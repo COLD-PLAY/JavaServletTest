@@ -162,7 +162,27 @@
         <servlet-name>SendEmailServlet</servlet-name>
         <url-pattern>/TocmatTest/SendEmailServlet</url-pattern>
     </servlet-mapping>
-
+    
+    <!--MyServlet-->
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.myorg.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/TomcatTest/MyServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!--ImportServlet-->
+    <servlet>
+        <servlet-name>ImportServlet</servlet-name>
+        <servlet-class>ImportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImportServlet</servlet-name>
+        <url-pattern>/TomcatTest/ImportServlet</url-pattern>
+    </servlet-mapping>
+    
     <!--error-code 相关的错误页面-->
     <error-page>
         <error-code>404</error-code>

@@ -21,7 +21,7 @@ public class UploadServlet extends HttpServlet {
         super();
     }
 
-    private static final String UPLOAD_DIRECTORY = "/home/coldplay/Desktop/upload";
+    private static final String UPLOAD_DIRECTORY = "/home/coldplay/Desktop/GitHub/JavaServletTest/upload";
 
     private static final int MEMORY_THRESHOLD = 1024*1024*30; // 30MB
     private static final int MAX_FILE_SIZE = 1024*1024*40; // 40MB

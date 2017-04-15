@@ -14,7 +14,7 @@ import java.sql.*;
 public class DatabaseAccessServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    static final String JDBC_DRIVE = "com..mysql.jdbc.Driver";
+    static final String JDBC_DRIVE = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost:3306/coldplay";
 
     static final String USER = "root";
